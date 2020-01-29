@@ -6,17 +6,17 @@
 
 ## Java reverse an int value - Pseudocode:
 
-a. Extract off the rightmost digit of your input number. (1234 % 10) = 4
+- a. Extract off the rightmost digit of your input number. (1234 % 10) = 4
 
-b. Take that digit (4) and add it into a new reversedNum.
+- b. Take that digit (4) and add it into a new reversedNum.
 
-c. Multiply reversedNum by 10 (4 * 10) = 40, this exposes a zero to the right of your (4).
+- c. Multiply reversedNum by 10 (4 * 10) = 40, this exposes a zero to the right of your (4).
 
-d. Divide the input by 10, (removing the rightmost digit). (1234 / 10) = 123
+- d. Divide the input by 10, (removing the rightmost digit). (1234 / 10) = 123
 
-e. Repeat at step a with 123
+- e. Repeat at step a with 123
 
-Java reverse an int value - Working code
+### Java reverse an int value - Working code
 
               public int reverseInt(int input) {
                   long reversedNum = 0;
