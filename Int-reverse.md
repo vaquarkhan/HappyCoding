@@ -6,12 +6,38 @@
 - Parse String to Int
 - if (n < 0)  then * -1 
 
+---------------------------------------------------
+
+## Solution 2
+
+The java.lang.Integer.reverse() is an inbuilt method in Java and is used to return the reverse order of the bits in the two’s complement binary representation of the specified int value.
+
+Syntax:
+
+        
+        public static int reverse(int a)
+         
+         
+         
+         import java.lang.*; 
+  
+         public class geeks { 
+  
+            public static void main(String[] args)  { 
+             int a = 168; 
+             System.out.println("Number = " + a); 
+  
+            // It returns the value obtained by reversing order of the bits 
+             System.out.println("By reversing we get = " + Integer.reverse(a)); 
+              } 
+         } 
+
 
 
 ----------------------------------------------------
 
 
-## Solution 2
+## Solution 3
 
 - Modding (%) the input int by 10 will extract off the rightmost digit. example: (1234 % 10) = 4
 
