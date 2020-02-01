@@ -37,7 +37,40 @@ Does the given String have any repeadted character in it.
 
 
 
+----------------------------------------------------------------------------------------------------------
 
+
+# Java Stream word count
+
+
+- Convert the list as a stream
+- Apply flatMap() operation to convert the List<Collection of words> to List<each Word>. we are trying to flatten the collection.
+  Convert each word to lower case.
+- Use collect() operation to group it based on the word and apply count operation.
+- Print the result
+- print max 
+
+
+
+
+           List<String> list = new ArrayList<>();
+              list.add("There are many places in this world to travel around.");
+              list.add("Sikkim is one of the best places in India.");
+              list.add("Once has to take atleast 10 days to visit Sikkim and enjoy its scenic beauty.");
+
+
+
+					public class StaticReference {
+						public static void main(String[] args) {
+						list
+						  .stream()
+						  .flatMap(i -> Arrays.stream(i.split(" ")))
+						  .map(i -> i.toLowerCase())
+						  .collect(Collectors.groupingBy(i -> i, Collectors.counting()))
+						  .forEach((k, v) -> System.out.println(k +" - "+ v));
+
+						}
+					}
 
 
 
