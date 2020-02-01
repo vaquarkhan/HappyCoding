@@ -8,6 +8,19 @@ Example :
 //maxChar("abcccccccd") ==="C"
 //MaxChar("apple 1231111") === "1".
 
+                or 
+
+What is the most common character in the String .
+
+                or 
+
+Does String A  have the same character as string B ( is it  an anagram) ?
+
+
+                or
+
+Does the given String have any repeadted character in it.
+
 
 ## 1 
 
