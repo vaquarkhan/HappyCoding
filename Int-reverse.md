@@ -1,3 +1,18 @@
+## Solution 1
+
+
+- Convert int to String  
+- Split as char array and reverse 
+- Parse String to Int
+- if (n < 0)  then * -1 
+
+
+
+----------------------------------------------------
+
+
+## Solution 2
+
 - Modding (%) the input int by 10 will extract off the rightmost digit. example: (1234 % 10) = 4
 
 - Multiplying an integer by 10 will "push it left" exposing a zero to the right of that number, example: (5 * 10) = 50
