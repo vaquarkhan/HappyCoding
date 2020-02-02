@@ -8,10 +8,44 @@ Array [1,2,3,4,5]
 - if the chunk size is 3, [1,2,3] and [4,5]
 - if the chunk size is 4, [1,2,3,4] and [5]
 
+## 1
+
+				public static int[][] chunkArray(int[] array, int chunkSize) {
+					int numOfChunks = (int)Math.ceil((double)array.length / chunkSize);
+					int[][] output = new int[numOfChunks][];
+
+					for(int i = 0; i < numOfChunks; ++i) {
+						int start = i * chunkSize;
+						int length = Math.min(array.length - start, chunkSize);
+
+						int[] temp = new int[length];
+						System.arraycopy(array, start, temp, 0, length);
+						output[i] = temp;
+					}
+
+					return output;
+				}
+
+ 
+	       
+	                    public static void main(String[] args) {
+
+		            int[] array= {1,2,3,4,5};
+		            int[][] chunkArray=chunkArray(array, 2);
+		
+		           for (int i = 0; i < chunkArray.length; i++) {
+		        	System.out.println(Arrays.toString(chunkArray[i]));
+	                   }
+
+	               }
+	       
+	       
+	       
+	-----------------------------------------------------------------------       
 
 
 
-Java 8
+## Java 8
 
 				import java.util.Arrays;
 
@@ -52,3 +86,4 @@ Java 8
 
 
 - https://medium.com/@Dragonza/four-ways-to-chunk-an-array-e19c889eac4
+- https://e.printstacktrace.blog/divide-a-list-to-lists-of-n-size-in-Java-8/
