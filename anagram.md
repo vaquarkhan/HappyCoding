@@ -8,6 +8,14 @@
 					 String ana1="vaquar   khan";
 					 String ana2="rauqav             Khan";
 					 
+					         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+
+					        Scanner scan = new Scanner(System.in);
+                                                  String str1 = scan.next();
+                                                  String str2 = scan.next();
+                                                 scan.close();
+	
 					 
 					String  str1 = ana1.replaceAll("\\s+", "");  // for multiple white spaces
 					String  str2 = ana2.replaceAll("\\s+", "");  // for multiple white spaces
